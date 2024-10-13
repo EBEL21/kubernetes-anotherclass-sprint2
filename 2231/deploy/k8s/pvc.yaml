@@ -16,8 +16,8 @@ spec:
   accessModes:
     - ReadWriteOnce
   selector:
-    matchLabels:
-      part-of: k8s-anotherclass
-      component: backend-server
-      name: api-tester
-      instance: api-tester-2231-files
+    matchExpressions:
+      - key: type
+     operator: In
+     values:
+      - nfs
