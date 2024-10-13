@@ -15,8 +15,9 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  local:
-    path: "/root/k8s-local-volume"
+  nfs:
+    server: 192.168.159.51
+    path: /home/tmax-ai/nfs/
   nodeAffinity:
     required:
       nodeSelectorTerms:
