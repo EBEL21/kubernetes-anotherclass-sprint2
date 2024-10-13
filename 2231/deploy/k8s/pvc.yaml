@@ -18,6 +18,6 @@ spec:
   selector:
     matchExpressions:
       - key: type
-     operator: In
-     values:
-      - nfs
+        operator: In
+        values:
+         - nfs
